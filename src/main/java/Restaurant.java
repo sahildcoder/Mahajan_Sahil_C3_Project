@@ -75,9 +75,13 @@ public class Restaurant {
     public int getTotalPrice(ArrayList<String> allSelectedItems)
     {
         int totalBill = 0;
+        for(String item: allSelectedItems)
+        {
+            Item selectedItem = findItemByName(item);
+            totalBill = totalBill + selectedItem.getItemPrice();
+        }
 
-
-        return 0;
+        return totalBill;
     }
 
 
