@@ -87,8 +87,9 @@ class RestaurantTest {
     @Test
     public void totalBill_should_be_388_when_sweetCorn_and_Lasagna_are_selected()
     {
-        List<String> selectedItems = new ArrayList<String>();
-
+        ArrayList<String> selectedItems = new ArrayList<String>();
+        selectedItems.add("Sweet corn soup");
+        selectedItems.add("Vegetable lasagne");
         Integer totalBill = restaurant.getTotalPrice(selectedItems);
         assertEquals(388,totalBill);
 
@@ -97,7 +98,8 @@ class RestaurantTest {
     @Test
     public void totalBill_should_be_119_when_sweetCorn_is_selected()
     {
-        List<String> selectedItems = new ArrayList<String>();
+        ArrayList<String> selectedItems = new ArrayList<String>();
+        selectedItems.add("Sweet corn soup");
 
         Integer totalBill = restaurant.getTotalPrice(selectedItems);
         assertEquals(119,totalBill);
@@ -107,7 +109,8 @@ class RestaurantTest {
     @Test
     public void totalBill_should_be_269_when_Lasagna_are_selected()
     {
-        List<String> selectedItems = new ArrayList<String>();
+        ArrayList<String> selectedItems = new ArrayList<String>();
+        selectedItems.add("Vegetable lasagne");
 
         Integer totalBill = restaurant.getTotalPrice(selectedItems);
         assertEquals(269,totalBill);
