@@ -76,7 +76,13 @@ class RestaurantTest {
 
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>Getting Total Price<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
+    @Test
+    public void totalBill_should_be_zero_when_no_items_are_selected()
+    {
+        ArrayList<String> selectedItems = new ArrayList<String>();
+        Integer totalBill = restaurant.getTotalPrice(selectedItems);
+        assertEquals(0, totalBill);
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<Getting Total Price>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }

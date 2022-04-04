@@ -72,6 +72,10 @@ public class Restaurant {
         return name;
     }
 
+    public int getTotalPrice(ArrayList<String> allSelectedItems)
+    {
+        return -1;
+    }
 
 
 }
