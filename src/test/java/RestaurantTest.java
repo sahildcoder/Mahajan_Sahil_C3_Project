@@ -83,6 +83,36 @@ class RestaurantTest {
         Integer totalBill = restaurant.getTotalPrice(selectedItems);
         assertEquals(0, totalBill);
     }
+
+    @Test
+    public void totalBill_should_be_388_when_sweetCorn_and_Lasagna_are_selected()
+    {
+        List<String> selectedItems = new ArrayList<String>();
+
+        Integer totalBill = restaurant.getTotalPrice(selectedItems);
+        assertEquals(388,totalBill);
+
+    }
+
+    @Test
+    public void totalBill_should_be_119_when_sweetCorn_is_selected()
+    {
+        List<String> selectedItems = new ArrayList<String>();
+
+        Integer totalBill = restaurant.getTotalPrice(selectedItems);
+        assertEquals(119,totalBill);
+
+    }
+
+    @Test
+    public void totalBill_should_be_269_when_Lasagna_are_selected()
+    {
+        List<String> selectedItems = new ArrayList<String>();
+
+        Integer totalBill = restaurant.getTotalPrice(selectedItems);
+        assertEquals(269,totalBill);
+
+    }
     //<<<<<<<<<<<<<<<<<<<<<<<Getting Total Price>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }
