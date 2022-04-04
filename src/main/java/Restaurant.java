@@ -74,7 +74,7 @@ public class Restaurant {
 
     public int getTotalPrice(ArrayList<String> allSelectedItems)
     {
-        return -1;
+        return 0;
     }
 
 
